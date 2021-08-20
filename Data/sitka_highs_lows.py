@@ -5,7 +5,7 @@ from datetime import datetime
 
 import matplotlib.pyplot as plt
 
-filename = '/home/pi/PythonCrashCourse/GeneratingData/Data/sitka_weather_2018_simple.csv'
+filename = 'sitka_weather_2018_simple.csv'
 with open(filename) as f:
     reader = csv.reader(f)
     header_row = next(reader)
@@ -27,7 +27,7 @@ plt.style.use('seaborn')
 fig, ax = plt.subplots()
 ax.plot(dates, highs, c='red', alpha=0.5)
 ax.plot(dates, lows, c = 'blue', alpha=0.5)
-ax.fill_between(dates, highs, lows, facecolor='blue', alpha=0.1 )
+ax.fill_between(dates, highs, lows, facecolor='blue', alpha=0.1)
 
 #format plot
 ax.set_title("Daily high and low temperatures - 2018", fontsize = 24)

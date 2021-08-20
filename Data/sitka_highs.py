@@ -5,7 +5,7 @@ from datetime import datetime
 
 import matplotlib.pyplot as plt
 
-filename = '/home/pi/PythonCrashCourse/GeneratingData/Data/sitka_weather_2018_simple.csv'
+filename = 'sitka_weather_2018_simple.csv'
 with open(filename) as f:
     reader = csv.reader(f)
     header_row = next(reader)
